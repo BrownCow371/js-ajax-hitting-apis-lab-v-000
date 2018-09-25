@@ -5,5 +5,13 @@
 function getRepositories() {
   let user = document.getElementById('username').value;
 
+  let req = new XMLHttpRequest();
+  req.addEventListener('load', showRepos);
+  re.open('GET', 'https://api.github.com/users/' + user + '/repos');
+  req.send();
+}
+
+function showRepos(){
   let repoDiv = document.getElementById('repositories')
+
 }
