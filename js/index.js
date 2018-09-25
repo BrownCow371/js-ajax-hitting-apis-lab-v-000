@@ -3,5 +3,5 @@
 // The displayed repositories should include the name and a link to the URL (HTML URL, not API URL).
 
 function getRepositories() {
-  let user = document.getElementById('username'.value)
+  let user = document.getElementById('username').value
 }
