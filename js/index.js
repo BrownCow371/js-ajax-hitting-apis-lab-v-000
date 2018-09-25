@@ -12,7 +12,9 @@ function getRepositories() {
 }
 
 function showRepos(){
-  document.getElementById('repositories').innerHTML = repoList;
+  let repos = JSON.parse(this.responseText);
+  console.log(repos);
+  // document.getElementById('repositories').innerHTML = repoList;
 
 }
 
